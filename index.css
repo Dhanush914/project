@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    /* ... other CSS variables ... */
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    /* ... other dark theme variables ... */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-cinema-background text-white font-[Poppins];
+  }
+
+  /* Custom scroll bar */
+  ::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+  }
+  
+  /* ... other scrollbar and animation styles ... */
+}
+
+@layer components {
+  .cinema-container {
+    @apply w-[90%] mx-auto;
+  }
+  
+  .seat {
+    @apply relative w-5 h-4 bg-cinema-muted rounded text-xs flex items-center justify-center text-white font-semibold cursor-pointer transition-all duration-300 ease-out;
+  }
+  
+  /* ... other component styles ... */
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    /* ... other CSS variables ... */
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    /* ... other dark theme variables ... */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-cinema-background text-white font-[Poppins];
+  }
+
+  /* Custom scroll bar */
+  ::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+  }
+  
+  /* ... other scrollbar and animation styles ... */
+}
+
+@layer components {
+  .cinema-container {
+    @apply w-[90%] mx-auto;
+  }
+  
+  .seat {
+    @apply relative w-5 h-4 bg-cinema-muted rounded text-xs flex items-center justify-center text-white font-semibold cursor-pointer transition-all duration-300 ease-out;
+  }
+  
+  /* ... other component styles ... */
+}
